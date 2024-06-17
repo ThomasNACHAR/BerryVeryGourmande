@@ -1,11 +1,11 @@
 <template>
-  <div class="p-8 w-full bg-primary">
+  <header class="p-8 w-full bg-primary">
     <div>
       <RouterLink to="/"
-        ><img class="h-24" src="../assets/logo.svg" alt="logo"
+        ><img class="h-24" src="../assets/logo.png" alt="logo"
       /></RouterLink>
     </div>
-  </div>
+  </header>
 </template>
 
 <script lang="ts">
