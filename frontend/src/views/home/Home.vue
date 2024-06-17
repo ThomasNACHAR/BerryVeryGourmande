@@ -1,15 +1,20 @@
 <template>
   <section>
     <Banner />
-    <div class="-mt-12 z-10 grid lg:grid-cols-3 gap-32 lg:gap-4 m-4">
+    <section class="-mt-12 z-10 grid lg:grid-cols-3 gap-32 lg:gap-4 m-4">
       <Card v-for="card in cards" :key="card.title" :card="card" />
-    </div>
+    </section>
+    <Hero />
+    <AboutMe />
   </section>
 </template>
 
 <script>
 import Banner from "./Banner.vue"
 import Card from "./Card.vue"
+import Hero from "./Hero.vue"
+import AboutMe from "./AboutMe.vue"
+
 import peopleImage from "../../assets/people.png"
 import walkingImage from "../../assets/walking-man.png"
 import handshakeImage from "../../assets/handshake.png"
@@ -18,6 +23,8 @@ export default {
   components: {
     Banner,
     Card,
+    Hero,
+    AboutMe,
   },
   data() {
     return {
