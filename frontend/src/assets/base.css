@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.button {
+  @apply px-8 py-4 border-2 border-primary rounded-md hover:bg-gradient-to-r hover:scale-125 transition-all duration-300 ease-in-out from-primary to-secondary
+}

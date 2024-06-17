@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="absolute bottom-0 bg-primary h-64 w-full p-8 flex justify-around items-center"
+    class="bg-primary h-64 w-full p-8 flex justify-around items-center"
   >
     <div class="flex flex-col gap-4">
       <p>Où me trouver ?</p>
