@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="bg-primary h-64 w-full p-8 flex justify-around items-center"
+    class="bg-primary sm:h-64 w-full p-8 flex flex-col gap-6 sm:flex-row justify-around items-center"
   >
     <div class="flex flex-col gap-4">
       <p>Où me trouver ?</p>
@@ -13,11 +13,11 @@
         /></a>
       </nav>
     </div>
-    <div class="mb-24 flex flex-col justify-center items-center gap-2">
+    <div class="sm:mb-24 flex flex-col justify-center items-center gap-2">
       <img class="h-24" src="../assets/logo.png" alt="Logo" />
       <p>Le food tour de Bourges</p>
     </div>
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col items-center justify-center gap-4">
       <p>07.80.75.44.87</p>
       <p>sabrina.pinthon@gmail.com</p>
       <p>Mentions légales</p>
