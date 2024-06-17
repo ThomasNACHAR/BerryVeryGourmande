@@ -1,0 +1,77 @@
+NoSQL
+
+Users
+{
+    "id": 1,
+    is_active: true,
+    "first_name": "Thomas",
+    "last_name": "NACHAR",
+    "email": "thomas@nachar.com",
+    "phone": 0123456789,
+    "password": "hash",
+    "is_admin": true,
+    "registration_date": "2024-02-01"
+}
+
+Tours
+{
+    "id": 1,
+    "name": "Visite de la cathédrale",
+    "place": "Cathédrale de Bourges",
+    "tour_date": "2024-04-03",
+    "description": "Prenez part à cette merveilleuse viste !",
+    "price": 30,
+    "seats": 50
+}
+
+Bookings
+{
+    "id": 1,
+    "booking_date": "2024-06-05",
+    "status": "Validée",
+    "user": 1,
+    "tour": 1
+}
+
+Newsletters
+{
+    "id": 1,
+    "title":"Ne manquez pas notre nouvelle recette !",
+    "content": "Plongez en enfance avec notre recette de 
+    tarte aux pommes.",
+    "newsletter_date": "2024-08-07",
+    "subscribers": [1]
+}
+
+Subscribers
+{
+    "id": 1,
+    "email": "jean@dupont.com",
+    "newsletters": [1]
+}
+
+Recipes
+{
+    "id": 1,
+    "title": "Tarte aux pommes",
+    "content": "Préchauffer le four. 
+    Abaisser la pâte dans un moule. 
+    Disposer les pommes soigneusement tranchées.
+     Saupoudrer de sucre. Cure pendant 30 minutes.
+      Laisser refroidir",
+    "ingredients": ["pommes", "pâte brisée", "sucre"],
+    "tags": ["pommes", "tarte", "dessert", "gâteaux"],
+    "author": 1,
+    "creation_date": "2024-02-01",
+    "update_date": "2024-02-05"
+}
+
+Comments
+{
+    "author": 1,
+    "content": "Super recette. Merci !",
+    "creation_date": "2024-02-01",
+    "update_date": "2024-02-05", 
+    "recipe": 1
+}
+
