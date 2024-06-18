@@ -9,6 +9,15 @@ const cors = require("cors")
 app.use(express.json())
 app.use(cors())
 
+// MONGOOSE
+
+mongoose
+  .connect("mongodb://localhost:27017/bvg")
+  .then((response) => console.log("MongoDB connected !"))
+  .catch((error) => console.error(error))
+
+// ROUTES
+
 app.get("/", (req, res) => {
   res.send("Hello World !")
 })
@@ -17,9 +26,3 @@ app.get("/", (req, res) => {
 
 const PORT = process.env.PORT || 3000
 app.listen(PORT, () => console.log("Serveur démarré : ", PORT))
-
-
-
-
-
-

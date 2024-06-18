@@ -1,7 +1,10 @@
 <template>
   <section>
     <Banner />
-    <section class="-mt-12 z-10 grid lg:grid-cols-3 gap-32 lg:gap-4 m-4">
+    <section
+      class="-mt-12 z-10 grid lg:grid-cols-3 gap-32 lg:gap-4 m-4"
+      id="cards"
+    >
       <Card v-for="card in cards" :key="card.title" :card="card" />
     </section>
     <Hero />

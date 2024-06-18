@@ -9,7 +9,7 @@
       <div class="w-[365px] bg-secondary p-8 rounded-md flex flex-col gap-12 items-center justify-center">
         <h1 class="text-6xl font-bold">Berry Very Gourmande</h1>
         <p>La balade gourmande du Berry !</p>
-        <a href="#" class="button">DÉCOUVRIR</a>
+        <a href="#cards" class="button">DÉCOUVRIR</a>
       </div>
     </div>
   </section>
