@@ -21,26 +21,30 @@
           ></div>
           <div class="flex flex-col justify-center items-center gap-4">
             <button class="" @click="isLogin = true">Se connecter</button>
-            <button @click="isLogin = false">S'inscrire</button>
+            <button @click="isRegister = true">S'inscrire</button>
           </div>
         </div>
       </div>
     </nav>
   </header>
   <Login :isLogin @update:isLogin="isLogin = false" />
+  <Register :isRegister @update:isRegister="isRegister = false" />
 </template>
 
 <script lang="ts">
 import { RouterLink, RouterView } from "vue-router"
 import Login from "../views/users/Login.vue"
+import Register from "../views/users/Register.vue"
 
 export default {
   components: {
     Login,
+    Register,
   },
   data() {
     return {
       isLogin: false,
+      isRegister: false,
     }
   },
 }

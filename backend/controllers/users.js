@@ -10,11 +10,12 @@ exports.getAllUsers = async (req, res) => {
 }
 
 exports.createUser = async (req, res) => {
+    console.log(req.body)
   const user = new User({
     first_name: req.body.first_name,
     last_name: req.body.last_name,
     email: req.body.email,
-    phone: req.body.phone,
+    phone: req.body.phone === "" ? null : req.body.phone,
     password: req.body.password,
   })
 
