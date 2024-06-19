@@ -38,6 +38,7 @@
 export default {
   data() {
     return {
+      API_URL: import.meta.env.VITE_API_URL,
       formData: {
         email: "",
         password: "",
@@ -52,7 +53,17 @@ export default {
       this.$emit("update:isLogin", false)
     },
     handleLogin() {
-        console.log(this.formData)
+      fetch(this.API_URL + "users/login/", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(this.formData),
+      })
+        .then((response) => {
+          if (!response.ok) throw new Error("Erreur de connexion !")
+          return response.json()
+        })
+        .then((data) => console.log(data))
+        .then((error) => console.error(error))
     },
   },
 }

@@ -1,3 +1,4 @@
+require("dotenv").config()
 const express = require("express")
 const app = express()
 
@@ -22,7 +23,7 @@ app.get("/", (req, res) => {
   res.send("Hello World !")
 })
 
-app.use('/users', require('./routes/users'))
+app.use("/users", require("./routes/users"))
 
 // DÉMARRAGE
 

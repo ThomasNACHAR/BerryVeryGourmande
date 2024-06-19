@@ -88,8 +88,14 @@ export default {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(this.formData),
       })
-        .then((response) => response.json())
-        .then((data) => console.log(data))
+        .then((response) => {
+          if (!response.ok) throw new Error("Erreur d'inscription !")
+          return response.json()
+        })
+        .then((data) => {
+          this.$emit("update:isRegister", false)
+          this.$emit("update:isLogin", true)
+        })
         .then((error) => console.error(error))
     },
   },

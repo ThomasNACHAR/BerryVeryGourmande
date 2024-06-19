@@ -28,7 +28,7 @@
     </nav>
   </header>
   <Login :isLogin @update:isLogin="isLogin = false" />
-  <Register :isRegister @update:isRegister="isRegister = false" />
+  <Register :isRegister @update:isRegister="isRegister = false" @update:isLogin="isLogin = true" />
 </template>
 
 <script lang="ts">
